@@ -1,5 +1,4 @@
-use influxdb::Client;
-use influxdb::QueryType::ReadQuery;
+use influxdb::{Client, ReadQuery};
 use serde::{Deserialize, Serialize};
 use tauri_plugin_sql::{Migration, MigrationKind};
 

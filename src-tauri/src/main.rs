@@ -1,7 +1,7 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-use influxdb::{Client, ReadQuery};
+use influxdb::Client;
 use influxgui::{make_migrations, ApiRes, InfConfig, InfluxRes, QueryResult, exec_query};
 
 #[tauri::command]
@@ -42,7 +42,7 @@ async fn get_measurements(config: InfConfig) -> ApiRes {
 async fn execute_cmd(command:String,config: InfConfig) -> InfluxRes {
     let mut column_names: Vec<String> = Vec::new();
     let mut column_values: Vec<Vec<serde_json::Value>> = Vec::new();
-    match exec_query(config,cmd).await {
+    match exec_query(config,command).await {
         Ok(res) => {
             let res = serde_json::from_str::<QueryResult>(&res).unwrap();
             for st in res.results {
