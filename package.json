@@ -1,0 +1,30 @@
+{
+  "name": "influxgui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "@tauri-apps/api": "^1",
+    "ahooks": "^3.8.1",
+    "antd": "^5.20.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.26.0",
+    "react-window": "^1.8.10",
+    "styled-components": "^6.1.12",
+    "tauri-plugin-sql-api": "github:tauri-apps/tauri-plugin-sql#v1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "sass-embedded": "^1.77.8",
+    "vite": "^5.3.1"
+  }
+}

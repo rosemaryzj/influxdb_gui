@@ -1,0 +1,59 @@
+/* Modal */
+.ant-modal {
+    .ant-modal-content {
+      background: #1e272e; // 深色背景
+      border-radius: 8px; // 圆角
+    }
+  
+    .ant-modal-header {
+      background: #2a2a2a; // 头部背景色
+      color: #fff; // 头部文字颜色
+      border-bottom: 1px solid #444; // 分隔线
+    }
+  
+    .ant-modal-title {
+      font-size: 1.5rem; // 标题字号
+      color: #ffffff;
+    }
+  
+    .ant-modal-footer {
+      background: #2a2a2a; // 底部背景色
+      border-top: 1px solid #444; // 分隔线
+    }
+  
+    .ant-form-item-label > label {
+      color: #fff; // 标签文字颜色
+    }
+  
+    .ant-input, .ant-input-password, .ant-input-number {
+      background-color: #2e3b4e; // 输入框背景色
+      color: #fff; // 输入框文字颜色
+      border-radius: 4px; // 圆角
+      border: 1px solid #3c4b60; // 边框颜色
+      transition: border-color 0.3s; // 平滑过渡
+    }
+  
+    .ant-input:focus, .ant-input-password:focus, .ant-input-number:focus {
+      border-color: #f56c6c; // 聚焦边框颜色
+      box-shadow: 0 0 5px rgba(245, 108, 108, 0.5); // 聚焦发光效果
+    }
+  
+    .ant-btn {
+      border-radius: 4px; // 按钮圆角
+      transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; // 平滑过渡
+    }
+  
+    .ant-btn-primary {
+      background-color: #f56c6c; // 按钮背景色
+      border-color: #f56c6c; // 按钮边框颜色
+      color: #fff; // 按钮文字颜色
+      box-shadow: 0 0 10px rgba(245, 108, 108, 0.5); // 发光效果
+    }
+  
+    .ant-btn-primary:hover {
+      background-color: #fc5858; // 悬停时背景色
+      border-color: #fc5858; // 悬停时边框颜色
+      box-shadow: 0 0 15px rgba(252, 88, 88, 0.7); // 强化发光效果
+    }
+  }
+  

@@ -1,0 +1,133 @@
+.query-page {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  background: radial-gradient(circle, #000000, #2e2e2e);
+  color: #333;
+  height: 95vh;
+  position: relative;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  margin-left: 20px; // Adjust margin to make space for the measurements section
+}
+
+.measurements {
+  width: 300px;
+  margin-right: 24px;
+  padding-top: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: #252424;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: calc(95vh - 48px); // Adjust height to fill the remaining space minus padding
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.measurements-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px; // Space for the Back button
+}
+
+.measurement-button {
+  margin-bottom: 8px;
+}
+
+.query-section {
+  flex: 1;
+}
+
+.query-card,
+.results-card {
+  width: 98%;
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.query-input {
+  margin-bottom: 16px;
+  background-color: #fafafa;
+  color: #333;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.query-button {
+  display: block;
+  width: 100%;
+}
+
+.results-card {
+  min-height: 580px;
+  width: 98%;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.results-table-wrapper {
+  min-height: calc(300px - 56px); // Subtract the height of the title and padding
+  overflow-y: auto;
+  width: 100%;
+}
+
+.results-table {
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+  max-height: 400px;
+}
+
+.table-header {
+  display: flex;
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #d9d9d9;
+  height: 40px;
+}
+
+.header-cell {
+  flex: 1;
+  padding: 8px;
+  border-right: 1px solid #d9d9d9;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.header-cell:last-child {
+  border-right: none;
+}
+
+.table-body {
+  flex: 1;
+}
+
+.table-row {
+  display: flex;
+  padding: 6px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.row-cell {
+  flex: 1;
+  padding: 6px;
+  text-align: center;
+  box-sizing: border-box;
+}

@@ -1,0 +1,96 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px; // 增加 padding 以增加内边距
+    background: radial-gradient(circle, #000000, #2e2e2e); // 深邃黑洞效果
+    min-height: 100vh;
+    color: #fff;
+    position: relative; // 为背景光效提供位置
+    overflow: hidden; // 确保背景效果不会溢出
+}
+
+.home-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255, 87, 34, 0.5), rgba(0, 0, 0, 0.7)); // 背景光效
+    z-index: -1; // 确保背景光效在内容下方
+    filter: blur(10px); // 背景光效模糊
+}
+
+.header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px; // 增加间距以提升布局
+}
+
+.page-title {
+    color: #ffffff;
+    font-size: 2.5rem; // 增大标题字号
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); // 添加文字阴影
+    background: linear-gradient(90deg, #f56c6c, #fc5858); // 渐变背景
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px; // 增加底部间距
+}
+
+.new-connection-button {
+    background-color: #f56c6c;
+    border-color: #f56c6c;
+    color: #fff;
+    border-radius: 8px; // 更圆角
+    padding: 10px 20px; // 增加内边距
+    font-size: 16px; // 增大字体
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; // 去掉闪烁效果
+    box-shadow: 0 0 10px rgba(245, 108, 108, 0.5); // 发光效果
+}
+
+.new-connection-button:hover {
+    background-color: #fc5858;
+    border-color: #fc5858;
+    box-shadow: 0 0 15px rgba(252, 88, 88, 0.7); // 强化发光效果，无闪烁
+}
+
+.connections-table {
+    width: 100%;
+    max-width: 1200px;
+    background: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px; // 增加表格内边距
+
+    .ant-table-header {
+        background: #333;
+        color: #101010;
+    }
+
+    .ant-table-cell {
+        color: #0e0d0d;
+    }
+
+    .ant-table-row {
+        transition: background-color 0.5s ease; // 平滑背景色变化
+    }
+}
+
+.modal {
+    .ant-modal-header {
+        border-bottom: 1px solid #444;
+    }
+    .ant-modal-footer {
+        border-top: 1px solid #444;
+    }
+    .ant-form-item-label > label {
+        color: #fff;
+    }
+}

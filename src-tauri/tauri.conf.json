@@ -1,0 +1,51 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "InfluxDB GUI",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "windows": [
+      {
+        "title": "influxdb_gui",
+        "width": 1150,
+        "height": 950,
+        "resizable": false,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "bundle": {
+      "macOS": {
+        "minimumSystemVersion": "10.15.0",
+        "entitlements": null,
+        "signingIdentity": null
+      },
+      "windows": {
+        "certificateThumbprint": null
+      },
+      "active": true,
+      "targets": "all",
+      "identifier": "com.evil.inf",
+      "icon": [
+        "icons/64.png",
+        "icons/128.png",
+        "icons/256.png"
+      ]
+    }
+  }
+}

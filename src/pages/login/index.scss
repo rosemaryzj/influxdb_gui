@@ -1,0 +1,68 @@
+#container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/login-back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white
+}
+
+
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48%;
+  height: 35%;
+  font-weight: bold;
+  transform: translate(-50%,-50%);
+  border: solid 3px transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(66, 141, 185, 0.214), rgba(95, 119, 123, 0.162)),
+  linear-gradient(to right, rgba(63, 194, 175, 0.265), rgba(123, 62, 121, 0.484));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form .ant-input {
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.login-form .ant-input-prefix {
+  color: #aaa;
+}
+
+.login-form .ant-input-prefix {
+  color: #aaa;
+}
+
+.login-form .ant-btn {
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 150, 255, 0.6);
+}
+
+.login-form .ant-btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.login-form .ant-btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+}
+
+.login-message {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
